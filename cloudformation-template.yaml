@@ -1,13 +1,12 @@
-
-          Resources:
+Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-06b21ccaeff8cd686                # Replace with your AMI ID
-      KeyName: suiii         # Replace with your key pair name
+      ImageId: ami-06b21ccaeff8cd686  # Replace with your AMI ID
+      KeyName: suiii                 # Replace with your key pair name
       SecurityGroups:
-        - default          # Replace with your security group ID
+        - default                    # Replace with your security group name
       UserData:
         Fn::Base64: |
           #!/bin/bash
