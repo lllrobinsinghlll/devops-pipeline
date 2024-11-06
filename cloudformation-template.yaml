@@ -1,9 +1,9 @@
 Resources:
   MyEC2Instance:
-    Type: AWS::EC2::Instance
-    Properties:
+    Type: "AWS::EC2::Instance"
+    Properties: 
       InstanceType: t2.micro
-      ImageId: ami-0c55b159cbfafe1f0  # This is a public Ubuntu 18.04 AMI for us-east-1 region
-      KeyName: MyKeyPair  # Optional, if you want SSH access
-      SecurityGroups:
+      ImageId: ami-06b21ccaeff8cd686  # Replace with your chosen AMI ID
+      KeyName: suiii
+      SecurityGroups: 
         - default
